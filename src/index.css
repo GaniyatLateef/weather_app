@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Work+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.app {
+  background-image: url("./assets/cold-bg.jpg");
+  background-size: cover;
+  background-position: bottom;
+  transition: 2s ease-out;
+}
+
+.app.warm {
+  background-image: url("./assets/warm-bg.jpg");
+}
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.75)
+  );
+  padding: 25px;
+}
+
+.search-box {
+  width: 100%;
+  margin: 0 0 75px;
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.5);  
+  border-radius: 0 0 16px 16px;
+  margin-top: -25px;
+
+  box-shadow: 0px 3px rgba(0, 0, 0, 0.2);
+  color: #313131;
+  font-size: 20px;
+  transition: 0.4s ease;
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.location-box .location {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.location-box .date {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.weather-box .details {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+
+  padding: 15px 25px;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.weather-box .temp {
+  color: #fff;
+  font-size: 102px;
+  font-weight: 900;
+
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+}
+
+.weather-box .feels {
+  color: #fff;
+  text-shadow: 2px 2px rgba(50, 50, 50, 0.5);
+  text-align: center;
+  font-style: italic;
+  font-size: 18px;
+}
+
+.weather-box .maxmin {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 14px;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+.weather-box .weather {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.weather-box .desc {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  padding: 15px 25px;
+  max-width: 250px;
+  border-radius: 16px;
+  margin: auto;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
+}
